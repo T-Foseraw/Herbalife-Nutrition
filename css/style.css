@@ -1,0 +1,432 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	color: #707070;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+.container{
+	width: 1280px;
+	margin: auto;
+	padding-top: 70px; 
+}
+.header{
+    width: 100%;
+	position: fixed;
+	background-color: #7ABF24;
+}
+.footer{
+	background-color: #7ABF24;
+}
+.redes{
+	width: 40px;
+}
+.row{
+	display: flex;
+}
+.col{
+	color: white;
+	margin: 50px;
+}
+/* menu */
+
+.logo img{
+    width: 100px;
+    cursor: pointer;
+}
+nav{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;   
+}
+nav li{
+    padding: 15px;
+	float: left;
+	display: flex;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+nav li:hover{
+	background-color: #a3dd5d;
+}
+nav ul li ul {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	margin-top: 35px;
+	background-color: #7ABF24;
+	width: 175px;
+}
+nav ul li:hover ul{
+	display: block;
+}
+.boton_ir img{
+    width: 12px;
+    cursor: pointer;
+}
+.search{
+    float: right;
+    height: 20px;
+    margin: 20px;
+    border: 1px solid rgb(122, 122, 122);
+    color: rgb(122, 122, 122);
+}
+.boton_ir{
+    float: right;
+    margin: 0px;
+    border: 1px solid rgb(122, 122, 122);
+    color: rgb(122, 122, 122);
+    width: 35px;
+    height: 22px;
+    left: -21px;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+.banner{
+    width: 100%;
+    height: 650px;
+    display: block;
+    margin: auto;
+}
+.tema1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.s1_logo{
+    width: 200px;
+    height: 40px;
+    float: left;
+
+}
+.titulo1{
+    color: #7ABF24;
+    position: relative;
+    left: 25px;
+  
+}
+.cards{
+	margin: 15px;
+	display: flex;
+    justify-content: center;
+}
+.card{
+	width: 300px;
+	background-color: #7ABF24;
+	margin: 30px;
+	box-shadow: -3px 3px 5px 5px #8888;
+	border-radius: 10px;
+	cursor: pointer; 
+}
+.card a{
+	text-decoration: none;
+}
+.card:hover{
+	transform: translateY(-15px);
+}
+.card_img {
+	width: 200px;
+	margin: 20px;
+	padding-left: 30px;
+}
+.card_titutlo{
+	display: block;
+	padding: 15px;
+	margin: 25px;
+	color: white;
+	border: solid 1px white;
+	text-align: center;
+	font-size: 20px;
+}
+
+.card_desc{
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	margin: 15px 30px;
+}
+.titulo2{
+	padding: 15px 50px;
+	margin-left: 30px;
+	color: white;
+	
+}
+.azul{
+	background-color: #0A91C0;
+	width: 600px;
+}
+.complete{
+	background-color: #ECEBE9;
+	width: 100;
+	height: 300px; 
+}
+.s2_cuadro{
+	border: #0A91C0 4px solid;
+	padding: 30px 130px;
+	margin: 45px;
+}
+.gris{
+	width: 100%;
+}
+.titulo3{
+	margin: 25px;
+	color: #D3800A;
+	text-align: center;
+}
+.r_cards{
+	margin: 15px;
+	display: flex;
+    justify-content: center;
+}
+.r_card{
+	width: 250px;
+	margin: 30px;
+	border: #707070 1px solid;
+	box-shadow: -3px 3px 5px 5px #8888;
+}
+.r_card a{
+	text-decoration: none;
+	color: #707070;
+}
+.r_card:hover{
+	transform: translateY(-25px);
+}
+.rct1 {
+	width: 150px;
+	height: 220px;
+	margin: 20px;
+	padding-left: 30px;
+}
+.rct2 {
+	width: 150px;
+	height: 215px;
+	margin: 20px;
+	padding-left: 30px;
+}
+.rct3 {
+	width: 150px;
+	height: 215px;
+	margin: 20px;
+	padding-left: 30px;
+}
+.rct_mas {
+	width: 150px;
+	margin: 20px;
+	padding-left: 30px;
+}
+.r_card_desc{
+	text-align: center;
+	padding: 10px;
+	margin: 5px;
+
+}
+
+.btn_rct{
+	padding: 15px 25px;
+	margin: 15px;
+	cursor: pointer;
+	border: none;
+	background-color: #a3dd5d;
+	color: white;
+}
+.btn_rct:hover{
+	background-color: #D3800A;
+}
+
+
+.f_rct1{
+	width: 100%;
+	height: 275px;
+	background-color: #FEEBC9;
+}
+.f_rct2{
+	width: 100%;
+	height: 275px;
+	background-color: #FFFFB0;
+}
+.f_rct3{
+	width: 100%;
+	height: 275px;
+	background-color: #FDDED1;
+}
+.f_rctmas{
+	width: 100%;
+	height: 275px;
+	background-color: #DDD4E8;
+}
+
+/* Recetas */
+.receta_bati{
+	background-color: #FEEBC9;
+	width: 1000px;
+	margin: 20px;
+	padding: 20px;
+	display: none;
+
+}
+.receta_desa{
+	background-color: #FFFFB0;
+	width: 1000px;
+	margin: 20px;
+	padding: 20px;
+	display: none;
+}
+.receta_post{
+	background-color: #FDDED1;
+	width: 1000px;
+	margin: 20px;
+	padding: 20px;
+	display: none;
+}
+.rct_content{
+	padding: 15px;
+	margin: 20px;
+}
+.rcta_img{
+	width: 250px;
+	margin: 30px;
+}
+
+/* pagina de productos */
+h4{
+	color: #D3800A;
+	margin: 15px;
+}
+h3{
+	color: #7ABF24;
+	margin: 15px;
+}
+h2{
+	margin: 15px;
+}
+.img_productos{
+	width: 100%;
+}
+.inf_prod{
+	margin: 15px;
+	padding: 35px;
+	border: #a1a1a1 2px solid;
+	border-radius: 5%;
+	background-color: antiquewhite;
+}
+.p_cards{
+	display: flex;
+	
+}
+.p_card{
+	width: 250px;
+	margin: 15px;
+}
+.p_card:hover{
+	box-shadow: 0px 3px 3px 3px rgba(124, 124, 124, 0.3);
+}
+
+.p_info{
+	width: 200px;
+	padding: 15px;
+	margin: 20px;
+	background-color: #7ABF24;
+	border: none;
+	text-align: center;
+	box-shadow: 3px 3px 3px 0px rgba(124, 124, 124, 0.3);
+}
+.p_info a{
+	text-decoration: none;
+	color: white;
+}
+.p_info:hover{
+	background-color: #D3800A;
+}
+
+
+/* Nosotros*/
+.nos_tabla{
+	width: 900px;
+	margin: 30px auto;
+	border-collapse: collapse;
+	
+}
+.nos_sec0{
+	margin: 30px;
+	background-color: #e0e0e0;
+	border: #e0e0e0 1px solid;
+}
+.nos_sec1{
+	margin: 30px;
+	border: #e0e0e0 1px solid;
+}
+.nos_desc{
+	padding: 15px;
+	margin: 20px;
+}
+.nos_img{
+	margin: 25px 70px;
+	width: 300px;
+}
+
+
+/* Contactanos */
+.comentario{
+	margin: 30px;
+	padding: 20px;
+	
+}
+.llenar{
+	display: block;
+	padding: 15px;
+	margin: 10px;
+	width: 400px;
+}
+.btn{
+	padding: 10px 30px;
+	margin: 10px;
+	background-color: #7ABF24;
+	border: none;
+	cursor: pointer;
+}
+.btn a{
+	text-decoration: none;
+	color: white;
+}
+.btn:hover{
+	background-color: #D3800A;
+}
+
+
+/* productos de nutricion interna */
+.prdts{
+	width: 800px;
+	padding: 30px;
+	margin: 30px 15px;
+	background-color:#FEEBC9;
+}
+.prdts1{
+	width: 800px;
+	padding: 30px;
+	margin: 30px 15px;
+	background-color:#FDDED1;
+}
+.prdts2{
+	width: 800px;
+	padding: 30px;
+	margin: 30px 15px;
+	background-color:#FFFFB0;
+}
+.prdts_table{
+	margin: 20px;	
+}
+.prdt_img{
+	width: 300px;
+	float: left;
+	margin: 20px 110px;
+}
+.desc{
+	padding: 30px 50px;
+	margin: 15px;
+}

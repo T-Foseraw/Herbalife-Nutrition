@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li class="logo">
+                        <a href="index.html"><img src="img/logob.png" class="menu_logo" alt="logo"></a>
+                    </li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="producto"><a href="productos.html">Productos</a>
+                        <ul class="desplegable">
+                            <li><a href="productos_nutricion.html">Productos de nutrición</a></li>
+                            <li><a href="recetas.html">Recetas</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                    <button class="boton_ir"><img src="img/buscar.png" class="img_ir" alt=""></button>
+                    <input class="search" type="text" placeholder="Buscar...">
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Contáctanos</h2>
+        <p>
+            Herbalife Nutrition tiene como meta proveer de buena nutrición a todo el mundo, es por ello que se esfuerza
+            en brindar un servicio personalizado y amistoso, abriendo oficinas en muchos países, para que sus productos
+            puedan llegar a cada vez más personas.
+            <br>
+            La compañía cuenta con centros de atención al Distribuidor Independiente Herbalife Nutrition en los más de
+            90 países donde tenemos operaciones
+        </p>
+
+        
+
+        <div class="comentario">
+
+            <h3>Deja nos un comentario</h3>
+
+            <form class="form" name="comment" onsubmit="return validar()">
+                <input type="text" class="llenar" placeholder="Nombre" name="name" />
+                <input type="email" class="llenar" placeholder="Correo" name="email" />
+                <textarea class="llenar" placeholder="Comentario"></textarea>
+                <button class="btn">Enviar</button>
+
+
+            </form>
+        </div>
+        <script>
+
+
+            //validar los campos del formulario comentario
+
+            function validar() {
+                var var_name = document.forms["comment"]["name"].value;
+                if (var_name == "") {
+                    alert("El campo nombre debe ser completado.")
+                    return false
+                }
+                var var_email = document.forms["comment"]["email"].value;
+                if (var_email == "") {
+                    alert("El campo Email debe ser completado")
+                    return false
+                }
+            }
+        </script>
+    </div>
+
+
+
+
+    <div class="footer">
+
+        <div class="row">
+
+            <div class="col">
+                <b>Centro de ventas</b>
+                <p><b>Dirección: </b>Av. Tirandente esq. Roberto Pastoriza, Plaza JR, <br>
+                    local 101, Ensanche Naco, Santo Domingo
+                </p>
+                <p><b>Email: </b> drorderline@herbalife.com</p>
+                <p><b>Teléfono: </b> +(809) 222 2345</p>
+            </div>
+            <div class="col">
+
+                <p><b>Horario:</b></p>
+                <p>Lunes a Viernes: <br> 9:00am - 6:00pm</p>
+                <p>Sábados: <br> 9:00am - 1:00pm</p>
+
+            </div>
+            <div class="col">
+
+                <p>¡Síguenos!</p>
+                <img src="img/logo fb.png" class="redes" alt="">
+                <img src="img/logo ig.png" class="redes" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
